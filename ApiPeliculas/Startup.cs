@@ -147,7 +147,7 @@ namespace ApiPeliculas
             
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ApplicationDbContext applicationDbContext)
         {
             if (env.IsDevelopment())
             {
@@ -196,6 +196,8 @@ namespace ApiPeliculas
 
             /*We support CORS*/
             app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+            applicationDbContext.Database.Migrate();
         }
     }
 }

@@ -1,0 +1,23 @@
+[33mcommit 626796e108d71e294cfd6ad1efba7c25aca3fab6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Emma Martí <emmardi@gmail.com>
+Date:   Tue Sep 20 20:12:55 2022 +0200
+
+    Trying  async  await calls
+
+[33mcommit 8b12a671ecd6addf1f8349fea42dcb41fe8a4c88[m
+Author: Daniel Silvestre <dasilro@gmail.com>
+Date:   Tue Sep 20 19:49:05 2022 +0200
+
+    Fix swagger endpoint path
+
+[33mcommit f8ca9186d8f447116beaaa2981fbffac80e70fbb[m
+Author: emmar <emmar@ANDROMEDA>
+Date:   Thu Jun 17 15:54:32 2021 +0200
+
+    Agregar archivos de proyecto.
+
+[33mcommit 16bf835eac33ad0a9a83a528dcf03b4d5760c903[m
+Author: emmar <emmar@ANDROMEDA>
+Date:   Thu Jun 17 15:54:30 2021 +0200
+
+    Agregar .gitignore y .gitattributes.

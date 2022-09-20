@@ -175,9 +175,9 @@ namespace ApiPeliculas
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("apiPeliculas/swagger/ApiPeliculasCategorias/swagger.json", "API Categorías Películas");
-                options.SwaggerEndpoint("apiPeliculas/swagger/ApiPeliculas/swagger.json", "API Películas");
-                options.SwaggerEndpoint("apiPeliculas/swagger/ApiPeliculasUsuarios/swagger.json", "API Usuarios Películas");
+                options.SwaggerEndpoint("/swagger/ApiPeliculasCategorias/swagger.json", "API Categorías Películas");
+                options.SwaggerEndpoint("/swagger/ApiPeliculas/swagger.json", "API Películas");
+                options.SwaggerEndpoint("/swagger/ApiPeliculasUsuarios/swagger.json", "API Usuarios Películas");
                 options.RoutePrefix = "";
             });
 

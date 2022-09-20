@@ -8,7 +8,7 @@ namespace ApiPeliculas.Repository.IRepository
 {
     public interface ICategoryRepository
     {
-        ICollection<Category> GetCategory();
+        Task<ICollection<Category>> GetCategoryAsync();
         Category GetCategory(int CategoryId);
         bool ExistCategory(string Name);
         bool ExistCategory(int Id);

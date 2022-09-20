@@ -1,7 +1,7 @@
 ﻿using ApiPeliculas.Data;
 using ApiPeliculas.Models;
 using ApiPeliculas.Repository.IRepository;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -40,9 +40,9 @@ namespace ApiPeliculas.Repository
             return _database.Category.Any(c => c.Id == Id);
         }
 
-        public ICollection<Category> GetCategory()
+        public async Task<ICollection<Category>> GetCategoryAsync()
         {
-            return _database.Category.OrderBy(c => c.Name).ToList();
+            return await _database.Category.OrderBy(c => c.Name).ToListAsync();
         }
 
         public Category GetCategory(int CategoryId)

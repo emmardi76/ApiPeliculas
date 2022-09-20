@@ -5,9 +5,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ApiPeliculas.Controllers
@@ -35,9 +33,9 @@ namespace ApiPeliculas.Controllers
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(List<CategoryDto>))]
         [ProducesResponseType(400)]
-        public IActionResult GetCategories()
+        public async Task<IActionResult> GetCategories()
         {
-            var ListCategories = _ctRepository.GetCategory();
+            var ListCategories = await _ctRepository.GetCategoryAsync();
 
             var ListCategoriesDto = new List<CategoryDto>();
 
